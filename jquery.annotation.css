@@ -1,0 +1,76 @@
+/* Mapper Specific */
+
+.mapper-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.mapper-bigpicture {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.mapper-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.mapper-hotarea {
+    position: absolute;
+}
+
+.mapper-hotspot {
+    position: absolute;
+    z-index: 3;
+    width: 14px;
+    height: 14px;
+    background: black;
+    cursor: pointer;
+}
+
+.mapper-infopanel {
+    background: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    z-index: 4;
+    padding: 6px;
+    overflow: visible;
+    width: 120px;
+}
+
+.mapper-content-wrapper {
+    background: white;
+    padding: 4px;
+    position: relative;
+}
+
+.mapper-panel-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px; /* should be equal to the padding of .info-panel */
+    /* IE 6 hack refer to: "http://jonrohan.me/guide/css/creating-triangles-in-css/" */
+    border-color: transparent;
+}
+
+.mapper-close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.mapper-content-wrapper>:first-child {
+    margin-right: 20px;
+}
